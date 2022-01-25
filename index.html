@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>YBoucetta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="resources/images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stars.css">
+
+    <!--right click -->
+    <link href="css/context-menu.css" rel="stylesheet">
+    <script src="js/context-menu.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<script>
+    function toggleProject() {
+        setTimeout(() => {
+            location.href = "#projects-section";
+        }, 2000);
+    }
+
+    function toggleSkill() {
+        setTimeout(() => {
+            location.href = "#skills-section";
+        }, 2000);
+    }
+
+    function updateScrollBar() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+    function downloadURI(uri, name) {
+        var link = document.createElement("a");
+        // If you don't know the name or want to use
+        // the webserver default set name = ''
+        link.setAttribute('download', name);
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+    }
+
+    function copyToClipboard(text) {
+        const elem = document.createElement('textarea');
+        elem.value = text;
+        document.body.appendChild(elem);
+        elem.select();
+        document.execCommand('copy');
+        document.body.removeChild(elem);
+    }
+</script>
+<div id="overlayer"></div>
+<div class="loader">
+    <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<div class="site-wrap" id="header-section">
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-4 ">
+                    <h1 class="m-0 site-logo nowrap"><a href="#home-section" class="nav-link">Yassine Boucetta</a></h1>
+                </div>
+                <div class="col-8">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="#home-section" class="nav-link">Accueil</a></li>
+                            <li><a href="#about-section" class="nav-link">Qui suis-je ?</a></li>
+                            <li><a href="#skills-section" class="nav-link">Compétences</a></li>
+                            <li><a href="#projects-section" class="nav-link">Réalisations</a></li>
+                            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span
+                            class="icon-menu h3"></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-blocks-cover overlay" style="background-image:url(./resources/images/pixel-jeff-clipa-s.gif)" id="home-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center align-self-center text-intro">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <!--mettre un texte-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section" id="about-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 mb-4 position-relative">
+                    <h2 class="section-title">Qui suis-je ?</h2>
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-5">
+                    <img src="resources/images/yassine.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <p>Je m'appelle Yassine Boucetta, j'ai 24 ans et je suis en 5ème année à <a
+                            href="https://www.intechinfo.fr/" target="_blank"><u>IN'TECH</u></a>, école d'ingénierie
+                        informatique, dans le but d'obtenir mon diplôme en architecture et système d'information. Comme vous l'aurez deviné,
+                        je suis un passioné de l'IT et de tout ce qui s'y rapproche.</p>
+
+                    <p> Je me considère comme une personne très curieuse et avide de connaissance. Alors très introverti plus jeune,
+                        j'ai depuis peu découvert une passion pour les voyages. Ce que je recherche, c'est notamment découvrir de nouveaux endroits et de nouvelles cultures.
+                        Une autre passion de que cultive depuis très jeune, c'est la musique. J'adore écouter mais aussi produire, que ce soit avec des instruments ou bien des logiciels.</p>
+
+                    <p>J’ai intégré IN'TECH en 2017 après l’obtention de mon baccalauréat scientifique, cela s’est
+                        fait naturellement car j’ai toujours été intéressé et intrigué par les nouvelles technologies.
+                        J’ai suivi le cursus en architecure et système d'information jusqu’au semestre 5, pour ensuite de partir en stage,
+                        aujourd’hui je suis en alternance et j’ai le sentiment d’avoir choisie la bonne voie pour mon développement professionnel et personnel.</p>
+
+                    <p>Dans le futur, je souhaiterais acquérir le plus de <a
+                            href="#skills-section" onclick="toggleSkill()"><u>compétences</u></a>
+                        possibles dans mon domaine d’action, dans mon travail.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".parcours">
+                        Mon parcours
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade parcours" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-primary"><u>Mon parcours</u></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="timeline">
+                    <div class="entry">
+                        <div class="title">
+                            <h3>Depuis 2020</h3>
+                            <p><a href="https://www.acensi.fr/page/accueil/fr_fr" target="_blank">Acensi</a>
+                            <p>Courbevoie</p>
+                            </p>
+                        </div>
+                        <div class="body">
+                            <p>Alternant en réseaux et supervision des systèmes</p>
+                            <ul>
+                                <li>PRTG</li>
+                                <li>VMware</li>
+                                <li>JIRA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="title">
+                            <h3>Septembre - Fevrier 2020</h3>
+                            <p><a href="https://www.neos-sdi.com/" target="_blank">Neos-SDI</a>
+                            <p>Paris</p>
+                        </div>
+                        <div class="body">
+                            <p>Stagiaire en sécurité Cloud</p>
+                            <ul>
+                                <li>Azure Active Directory</li>
+                                <li>OpenID Connect</li>
+                                <li>Intune</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="title">
+                            <h3>2017 - 2022</h3>
+                            <p><a href="https://www.intechinfo.fr/" target="_blank">Intech</a></p>
+                            <p>Ivry-surSeine</p>
+                        </div>
+                        <div class="body">
+                            <p>Expert en système et réseaux</p>
+                            <ul>
+                                <li>Diplôme inscrit au RNCP niveau 7 Master</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="title">
+                            <h3>2016 - 2017</h3>
+                            <p><a href="https://www.mcdonalds.fr/" target="_blank">McDonald's</a></p>
+                            <p>Paris</p>
+                        </div>
+                        <div class="body">
+                            <p>Employé polyvalent</p>
+                            <ul>
+                                <li>Caisse et cuisine</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="title">
+                            <h3>2012 - 2015</h3>
+                            <p><a href="https://www.ac-paris.fr/serail/jcms/s2_1584175/fr/accueil" target="_blank">Lycée Chaptal</a></p>
+                            <p>Paris</p>
+                        </div>
+                        <div class="body">
+                            <p>Baccalauréat Scientifique</p>
+                            <ul>
+                                <li>Spécialité sciences et vie de la Terre</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="site-section block__62272" id="skills-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 position-relative">
+                    <h2 class="section-title text-center mb-5">Compétences</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5" data-aos="fade">
+                <div id="competencesFilter" class="filters text-center button-group col-md-7">
+                    <button class="btn btn-primary active" id="filterAll" data-filter="*">Tout</button>
+                    <button class="btn btn-primary" id="filterHard" data-filter=".hard">Techniques</button>
+                    <button class="btn btn-primary" id="filterSoft" data-filter=".soft">Transverses</button>
+                    <button class="btn btn-primary" id="filterCommunication" data-filter=".communicationSkill"
+                            hidden></button>
+                    <button class="btn btn-primary" id="filterAutonomy" data-filter=".autonomySkill" hidden></button>
+                    <button class="btn btn-primary" id="filterJava" data-filter=".javaSkill" hidden></button>
+                    <button class="btn btn-primary" id="filterPSQL" data-filter=".postgresSkill" hidden></button>
+                    <button class="btn btn-primary" id="filterAutoformation" data-filter=".formationSkill"
+                            hidden></button>
+                    <button class="btn btn-primary" id="filterAngular" data-filter=".angularSkill" hidden></button>
+                    <button class="btn btn-primary" id="filterC" data-filter=".cSkill" hidden></button>
+                    <button class="btn btn-primary" id="filterTeamWork" data-filter=".teamWorkSkill"
+                            hidden></button>
+                </div>
+            </div>
+            <div id="competences" class="row no-gutter skills">
+                <div class="itemSkill item hard javaSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Azure
+                    </h3>
+                    <a href="resources/images/azure.jpg" class="item-wrap" data-toggle="modal"
+                       data-target=".java">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="java" src="resources/images/azure.jpg">
+                    </a>
+                    <div class="modal fade java" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Azure</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">
+                                        Azure Active Directory
+                                    </h4>
+                                    <p>
+                                        Azure Active Directory est le service de gestion de l’accès et des identités basé sur le cloud de Microsoft.
+                                        Il permet à vos employés de se connecter et d’accéder aux ressources externes telles que Microsoft 365, le
+                                        portail Azure et des milliers d’autres applications SaaS, ou bien aux ressources internes telles que les
+                                        applications situées sur votre réseau d’entreprise.
+                                    </p>
+                                    <p>
+                                        La solution s'adresse aux utilisateurs suivants :
+                                        Les administrateurs informatiques. En tant qu’administrateur informatique, vous pouvez utiliser Azure AD
+                                        pour contrôler l’accès à vos applications et à leurs ressources en fonction des besoins de votre entreprise. 
+                                        Développeurs d’applications. En tant que développeur d’applications, vous pouvez utiliser Azure AD dans le
+                                        cadre d’une approche normalisée pour ajouter l’authentification unique à votre application, laquelle peut
+                                        alors fonctionner avec les informations d’identification existantes d’un utilisateur.
+                                    </p>
+                                    <div class="text-center">
+                                        <img src="resources/images/azure_banner.jpg" alt="azure"
+                                             class="img-fluid">
+                                    </div>
+                                    <h4 class="modal-text-title">AZURE ET MOI</h4>
+                                    <p>
+                                        Durant mon stage effectué à Neos-SDI, j’ai pu explorer l’écosystème d’Azure sous divers aspects.
+                                        Ma première tâche était de me renseigner un maximum sur les concepts de Cloud Computing et des solutions principales que propose Azure,
+                                        notamment au niveau de l’accessibilité et de la sécurité des données.
+                                    </p>
+                                    <p>
+                                        Une fois que les concepts de base étaient bien assimilés, j’ai commencé à m’intéresser en particulier à la gestion des utilisateurs,
+                                        et de ce fait j’ai approfondi mes connaissances sur Azure Active Directory, le registre de Microsoft hébergé directement dans le Cloud Azure.
+                                        En m’y intéressant, j’ai pu découvrir tous les différents services liés à la protection de l’identité des utilisateurs dans Azure Active Directory.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <div class="row">
+                                                <h5 class="col-12 text-center modal-text-title">
+                                                    Découvrez les compétences utilisées
+                                                </h5>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary"
+                                                            onclick="toggleProject()"
+                                                            data-dismiss="modal" data-toggle="modal"
+                                                            data-target=".formation">Autoformation
+                                                    </button>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary"
+                                                            onclick="toggleProject()"
+                                                            data-dismiss="modal" data-toggle="modal"
+                                                            data-target=".autonomy">Autonomie
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="itemSkill item soft autonomySkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Autonomie
+                    </h3>
+                    <a href="resources/images/autonomy.png" class="item-wrap" data-toggle="modal"
+                       data-target=".autonomy">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="autonomy" src="resources/images/autonomy.png">
+                    </a>
+                    <div class="modal fade autonomy" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Autonomie</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">
+                                        L’AUTONOMIE, UNE QUALITE INNEE
+                                    </h4>
+                                    <p>
+                                        Depuis enfant, j'ai toujours été très autonome dans ce que je fais ou j'entreprends.
+                                        Le fait d'apprendre par soi-même est une force que j'adore cultiver, et qui en fait 
+                                        pour moi une passion à part entière.
+                                    </p>
+                                    <p>
+                                        L'autonomie se construit tout le long de notre vie, c'est une compétence graduelle
+                                        qu'il faut cultiver. De ce fait, chaque individu possède un degré d’autonomie
+                                        plus ou moins élevé lors de la réalisation d'une tâche ou d'un projet.
+                                    </p>  
+                                    <p>
+                                        Pour être autonome, il faut selon moi être passioné par ce que l'on souhaite réaliser.
+                                        Et pour être passioné, il est impératif d'être curieux, de manière générale, car la 
+                                        curiosité sera le moteur inhérant au fruit du travail réalisé.
+                                    </p>
+                                    <p>
+                                        IN'TECH m'a permi d'énormément capitaliser sur cette force, de par les modes de travail projet,
+                                        depuis le semestre 1. J'ai pu explorer énormément de secteurs, qu'ils soient dans le domaine de
+                                        l'informatique ou non, et je suis très fier d'en parler ici, car je constate que ce profil ne 
+                                        correspond pas forcément aux modèles pédagogiques présentés par d'autres écoles similaires.
+                                    </p>  
+
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h5 class="col-12 text-center modal-text-title">
+                                                Découvrez les projets où j'ai pu appliquer cette compétence
+                                            </h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".trumptower">PROMETHEUS
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".sharenstream">SNOW
+                                                </button>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".icar">Motherboard
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="itemSkill item soft communicationSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Communication
+                    </h3>
+                    <a href="resources/images/communication.png" class="item-wrap" data-toggle="modal"
+                       data-target=".communication">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="communication" src="resources/images/communication.png">
+                    </a>
+                    <div class="modal fade communication" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Communication</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <p>
+                                        Ces cinq années passées à IN'TECH m'ont permi de comprendre l'importance de
+                                        la communication au sein d'un projet.
+                                    </p>
+                                    <p>
+                                        Dans mes souvenirs, j'étais de nature assez reservée, et je préferais beaucoup
+                                        plus travailler dans mon coin, plutôt que de partager ces moments avec mes camarades 
+                                        ou bien mes amis.
+                                    </p>
+                                    <p>
+                                        L'élément déclancheur de la découverte de cette compétence est le lot de PFH (projet
+                                        de formation humaine) dans lesquels j'ai pu prendre part avec mes camarades de classe.
+                                        La création d'un évènement a été sans doute le projet le plus pertinent pour développer
+                                        cette compétence. J'ai du faire appel à mon réseaux d'amis artistes que j'ai connu via internet
+                                        pour leur proposer d'exposer leur créations, et ce fût autant gratifiant pour eux que pour nous.
+                                    </p>
+                                    <p>
+                                        Une bonne communication permet, dans un premier temps, de travailler dans de
+                                        meilleures conditions, en effet il peut arriver à chacun de ne pas avoir compris
+                                        une problématique, ce qui permet ainsi une meilleure cohésion d'équipe.
+                                        La communication permet également de souder une équipe, afin que chaque membre puisse 
+                                        mieux se retrouver parmi les collègues, forgeant l'identité du groupe.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h5 class="col-12 text-center modal-text-title">
+                                                Découvrez les projets où j'ai pu appliquer cette compétence
+                                            </h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".trumptower">PROMETHEUS
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".sharenstream">Snow
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".icar">Motherboard
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemSkill item hard postgresSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        PRTG
+                    </h3>
+                    <a href="resources/images/prtg.png" class="item-wrap" data-toggle="modal"
+                       data-target=".postgres">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="postgres" src="resources/images/prtg.png">
+                    </a>
+                    <div class="modal fade postgres" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>PRTG</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">
+                                        PRTG
+                                    </h4>
+                                    <p>
+                                        PRTG est un logiciel commercial de supervision qui s'exécute sous Windows.
+                                        A partir de son interface Web, il permet de créer des capteurs, plus couramment
+                                        appelé sondes, en s'appuyant notamment sur des protocoles de communication réseau
+                                        tels que l'ICMP, le SNMP, ou bien le SSH.
+                                    </p>
+                                    <p>
+                                        Ces capteurs génèrent des graphiques mesurant l'activité des switchs, routeurs,
+                                        serveurs et imprimantes réseau. Les canaux, quant à eux, définissent des seuils
+                                        d'alerte et des notifications le cas échéant.
+                                    </p>
+                                    <h4 class="modal-text-title">
+                                        MONITORING DU PARC INTERNE
+                                    </h4>
+                                    <p>
+                                        Lors de mon alternance à Acensi, j'ai directement commencé dans le pôle supervision.
+                                        Ma mission était alors de veiller à la santé des équipements informatiques dans le
+                                        réseau interne de la tour. Les principales alertes remontées par la solution étaient
+                                        liées à la mémoire des équipements, soit le stockage disque atteignait un seuil défini
+                                        au préalable, auxquel cas je devais me connecter à la machine en question via SSH pour
+                                        allouer plus d'espace ou bien supprimer des anciennes données, soit il s'agissait d'une 
+                                        saturation du processeur ou de la RAM, et dans ce cas je devais relancer ou supprimer 
+                                        des services superflux dans ces machines.
+                                    </p>
+                                    <p>
+                                        PRTG m'a permi de refaire le lien avec la technique, j'avais explicitement communiqué à 
+                                        mon manager que c'était ce que je cherchais, et je pense qu'il s'agissait d'un bon challenge
+                                        car la solution permet de revoir en pratique l'ensemble des connaissances théoriques que j'ai
+                                        pu couvrir depuis ma spécialisation en système et réseaux.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <div class="row">
+                                                <h5 class="col-12 text-center modal-text-title">
+                                                    Découvrez les projets où j'ai pu appliquer cette compétence
+                                                </h5>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary"
+                                                            onclick="toggleProject()"
+                                                            data-dismiss="modal" data-toggle="modal"
+                                                            data-target=".trumptower">PROMETHEUS
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemSkill item soft formationSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Autoformation
+                    </h3>
+                    <a href="resources/images/formation.png" class="item-wrap" data-toggle="modal"
+                       data-target=".formation">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="formation" src="resources/images/formation.png">
+                    </a>
+                    <div class="modal fade formation" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Autoformation</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">
+                                        UN MOTEUR AVANT TOUT
+                                    </h4>
+                                    <p>
+                                        L'autoformation est dans doutes la compétence la plus importante, spécialement dans le domaine de l'informatique.
+                                        Programmer des scripts ou bien deployer des nouvelles solutions d'infrastructures doit être très difficile si on
+                                        ne possède pas cette qualité, car la frontière entre la théorie et la pratique est immense dans ce domaine, il 
+                                        est très rare de suivre une procédure à la lettre sans avoir de problème lors de l'installation ou dans le déploiement
+                                        d'une solution.
+                                    </p>
+                                    <p>
+                                        Lors de mon stage à Neos-SDI, j'ai pu expérimenter diverses solutions d'authentification utilisateur dans l'écosystème Azure.
+                                        Lors de ces déploiement dans mon tenant Azure, qui est un environnement de test, j'ai pu me confronter à divers soucis de compatibilité,
+                                        et il est extrêment important de comprendre d'où vient la source de ces problèmes pour tenter au mieux de les corriger.
+                                    </p>
+                                    <p>
+                                        Dans le cas présent, je devais utiliser Azure Identity Manager afin de d'identifier les utilisateurs souhaitant se connecter, et leur proposer une solution
+                                        d'authentification unique, appelée SSO. Et c'est donc c'est à ce moment précis que j'ai commencé à regarder la documentation, rédigée en anglais.
+                                        Le temps d'une après-midi, j'ai pu faire face à tous les problèmes d'intégration que j'ai pu avoir, et présenter une solution fonctionnel au manager.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h5 class="col-12 text-center modal-text-title">
+                                                Découvrez les projets où j'ai pu appliquer cette compétence
+                                            </h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".trumptower">PROMETHEUS
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".icar">Motherboard
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary" onclick="toggleProject()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".sharenstream">Snow
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="itemSkill item hard angularSkill col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Jira
+                    </h3>
+                    <a href="resources/images/jira.png" class="item-wrap" data-toggle="modal"
+                       data-target=".angular">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="angular" src="resources/images/jira.png">
+                    </a>
+                    <div class="modal fade angular" tabindex="-1" role="dialog"
+                         aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-primary"><u>Jira</u></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <p>
+                                        Jira est un système de suivi de bugs, de gestion des incidents et de gestion de
+                                        projets développé par Atlassian et publié pour la première fois en 2002.
+                                        Il propose des solutions à la fois à destination des développeurs et des
+                                        intervenants non développeurs.
+                                    </p>
+                                    <p>
+                                        Lors de mon alternance, JIRA tait la solution pour la gestion des tickets au sein de l'entreprise,
+                                        ainsi que du workflow de certains projets d'intégration.
+                                        J'ai pu participer à l'implémentation de certaines fonctionnalités au sein du logiciel, et j'ai
+                                        pu m'intéresser à la recherche avancée de la solution, qui est très complète.
+                                        J'ai aussi découvert la solution Confluence, qui fait parti de la suite Atlassian avec Jira, et qui est
+                                        une plateforme de partage de documents, essentiellement utilisée à Acensi pour créer et partager les diverses
+                                        procédures sur les solutions à implémenter.
+                                    </p>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <div class="row">
+                                                <h5 class="col-12 text-center modal-text-title">
+                                                    Découvrez les compétences utilisées
+                                                </h5>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary"
+                                                            onclick="toggleProject()"
+                                                            data-dismiss="modal" data-toggle="modal"
+                                                            data-target=".communication">Communication
+                                                    </button>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary"
+                                                            onclick="toggleProject()"
+                                                            data-dismiss="modal" data-toggle="modal"
+                                                            data-target=".formation">Autoformation
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section block__62272" id="projects-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 position-relative">
+                    <h2 class="section-title text-center mb-5">Réalisations</h2>
+                </div>
+            </div>
+
+            <div id="projects" class="row no-gutter project">
+                <div class="itemProject item it trumpTowerProject col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <div class="text-center">
+                        <h3 class="text-center title">
+                            PROMETHEUS
+                        </h3>
+                    </div>
+                    <a href="resources/images/prometheus.png" class="item-wrap" data-toggle="modal"
+                       data-target=".trumptower">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="trumptower" src="resources/images/prometheus.png">
+                    </a>
+                    <div class="modal fade trumptower" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h2 class="modal-title text-primary"><u>Prometheus</u></h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            Système et réseaux
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">L’Education est un bien public et universel</h4>
+                                    <p>
+                                        Prometheus est un projet qui est née du projet Educom développer au Sénégal pour
+                                        venir en soutien au gouvernement à travers le Ministère de l’éducation national
+                                        (MEN) au système éducatif du pays. Prometheus à donc pour objectif principal le
+                                        développement et la mise en place d’une plateforme numérique pour le management
+                                        de ce système éducatif.
+                                    </p>
+                                    <p>
+                                        L’ensemble sera géré par les différents acteurs et responsables de son fonctionnement
+                                        et de son aboutissement (Ministère de l’Education Nationale, Inspection Académique,
+                                        Mairie, Parent d’élève et Association Communautaire).
+                                        Une Plateforme de formation en ligne du système éducatif public sera disponible
+                                        pour les élèves et période interruption des cours par les enseignants en grèves.
+                                    </p>
+                                    <h5 class="modal-text-title">Mission</h5>
+                                    <p>
+                                        PROMETHEUS est une application web mise en place pour Educom basé au Sénégal qui va
+                                        jouer le rôle de HUB entre ministère de l'éducation national, enseignants, élèves,
+                                        parents d’élèves et association du système éducatif sénégalais leurs permettra de
+                                        collaborer autour du programme scolaire en continu, sans interruption du processus d’éducation.
+                                    </p>
+                                    <p>
+                                        L’application permet aux élèves de collaborer avec leurs professeurs, les parents
+                                        d'élèves, la mairie et les associations communautaire. Cette synergie au premier
+                                        niveau va aider le ministère de l’éducation à faire de l’éducation plus qu’un bien
+                                        public, un bien universel.
+                                    </p>
+                                    <p>
+                                        Il y aura une synergie au second niveau entre ministère, l’inspection académique et
+                                        le directeur, qui s’inscrit plus dans une logique de management et d’information.
+                                        L’application web PROMETHEUS va prendre en compte ces deux niveaux de communications
+                                        pour en faire une interface unique de gestion et d’apprentissage de tous les acteurs
+                                        passifs et actifs du système éducatif sénégalais.
+                                    </p>    
+                                    <h5 class="modal-text-title">Ma contribution au sein du projet</h5>
+                                    <ul>
+                                        <li>Gestion des utilisateurs avec OpenLDAP
+                                            - Création, suppression et affectation des utilisateurs dans des groupes
+                                            - Création de groupes 
+                                        </li>
+                                        <li>Gestion du DNS
+                                            - Création et modification d’enregistrement A, PTR, NS, CNAME
+                                        </li>
+                                        <li>Supervision 
+                                            - Mise en place de PRTG avec le protocole SNMP
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <h5 class="text-center modal-text-title">Découvrez les compétences
+                                                utilisées</h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".communication">
+                                                    Communication
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".formation">
+                                                    Autoformation
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".autonomy">
+                                                    Autonomie
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="itemProject item human shareNStreamProject col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Snow
+                    </h3>
+                    <a href="resources/images/snow.png" class="item-wrap" data-toggle="modal"
+                       data-target=".sharenstream">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="sharenstream" src="resources/images/snow.png">
+                    </a>
+                    <div class="modal fade sharenstream" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title text-primary"><u>Snow</u></h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">Atteignez le sommet sans se soucier des avalanches</h4>
+                                    <p>Le projet Snow a pour but de mettre en place un pare-feu sécurisé filtrant les connexions
+                                        entrantes et sortantes sur le nouveau réseau de l’école. Ce pare-feu est muni d’un portail
+                                        captif permettant l’authentification des utilisateurs.
+                                        Le système enregistrera aussi tous les jours des logs et donnera l’alerte en cas de
+                                        problème sur le réseau.
+                                        </p>
+                                    <h5 class="modal-text-title">Le besoin</h5>
+                                    <p>En effet, sous prétexte de surveiller au plus près les internautes, le décret d'application de la loi n° 2004-575 du
+                                        21 juin 2004 pour la confiance dans l'économie numérique, se définit dans les articles 6, 57 et 58. 
+                                        Ces articles exigent que les éditeurs de sites, les hébergeurs, les opérateurs de téléphonie fixe et mobile et les
+                                        fournisseurs d'accès à Internet, conservent toutes les traces des internautes et des abonnés au mobile, pour les
+                                        délivrer à la police judiciaire ou à l'Etat, sur simple demande. 
+                                        Ces données seraient conservées pendant un an, et tenues à disposition de la police administrative (DGSI) ou judiciaire.
+                                    </p>
+                                    <h5 class="modal-text-title">Les objectifs</h5>
+                                    <ul>
+                                        <li>Mettre en place un pare-feu OPNsense</li>
+                                        <li>Enregistrement et sécurisation des logs</li>
+                                        <li>Gestion des alertes sur une interface WEB</li>
+                                    </ul>
+                                    <h5 class="modal-text-title">Mon retour personnel</h5>
+                                    <p>Je suis vraiment satisfait d’avoir participé au projet Snow en tant que chef de projet,
+                                        cela m'a permi de découvrir tous les enjeux liés à la gouvernance du projet. Ajouté à ça le fait
+                                        que mon partenaire de travail avait déjà pour but de développer ses compétences de chef de projet,
+                                        cela était un défi pour moi de remplir l'ensemble des tâches.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <h5 class="text-center modal-text-title">Découvrez les compétences
+                                                utilisées</h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".communication">
+                                                    Communication
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".autonomy">
+                                                    Autonomie
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="itemProject item it icarProject col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                    <h3 class="text-center title">
+                        Motherboard
+                    </h3>
+                    <a href="resources/images/motherboard.png" class="item-wrap" data-toggle="modal"
+                       data-target=".icar">
+                        <span class="icon-search2"></span>
+                        <img class="img-fluid" alt="icar" src="resources/images/motherboard.png">
+                    </a>
+                    <div class="modal fade icar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h2 class="modal-title text-primary"><u>Motherboard</u></h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            Système et réseaux
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body modal-text">
+                                    <h4 class="modal-text-title">
+                                        La solution mère à vos déploiement d'infrastructure réseau
+                                    </h4>
+                                    <p>Motherboard est un projet destiné à toutes personnes souhaitant déploiyer une infrastructure réseau basique
+                                        dans un environnement informatique. La solution intègre une interface ihm pour le futur administrateur système 
+                                        du client, dans laquelle il pourra gérer les utilisateurs ainsi que les machines du parc informatique,
+                                        tout en ayant la main sur les portocoles réseu classiques tels que le DHCP, SNMP ou encotre SMTP.
+                                    </p>
+                                    <h5 class="modal-text-title">Mission</h5>
+                                    <p>Réaliser une solution réseaux présentant tous les cas d'utilisations possibles que peux fournir une interface IHM</p>
+                                    <h5 class="modal-text-title">Ma contribution au sein du projet</h5>
+                                    <ul>
+                                        <li>Création de la DMZ</li>
+                                        <li>Priorisation des tâches</li>
+                                        <li>Developpement de l'interface ihm en langage php</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <h5 class="text-center modal-text-title">Découvrez les compétences
+                                                utilisées</h5>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".communication">
+                                                    Communication
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".autonomy">
+                                                    Autonomie
+                                                </button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-primary"
+                                                        onclick="toggleSkill()"
+                                                        data-dismiss="modal" data-toggle="modal"
+                                                        data-target=".formation">
+                                                    Autoformation
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section" id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 position-relative">
+                    <h2 class="section-title text-center mb-5">Contactez moi</h2>
+                    <p class="text-center">Vous retrouverez mon CV en effectuant un click droit</p>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <a href="https://www.linkedin.com/in/yassine-boucetta-992459184/" target="_blank"><img
+                            class="rounded mx-auto d-block" alt="LinkedIn" src="resources/images/linkedin.png"></a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="mailto:yboucetta@et.intechinfo.fr" target="_blank"><img class="rounded mx-auto d-block"
+                                                                                   alt="Email"
+                                                                                   src="resources/images/mail.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-section bg-light footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div>
+                        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="progress-container scrollbar-hugo">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script>
+    window.onscroll = () => {
+        updateScrollBar()
+    };
+
+    const menu = new ContextMenu({
+        'theme': 'default',
+        'items': [
+            {'icon': '', 'name': 'Copier mon email', action: () => copyToClipboard("yboucetta@et.intechinfo.fr")},
+            {
+                'icon': '',
+                'name': 'Télécharger mon CV',
+                action: () => downloadURI('resources/YassineBOUCETTA.pdf', 'CV_Yassine_BOUCETTA.pdf')
+            }
+        ]
+    })
+
+    function openContextMenu(evt) {
+
+        // prevent default event
+        evt.preventDefault();
+
+        // open the menu with a delay
+        const time = menu.isOpen() ? 100 : 0;
+
+        // hide the current menu (if any)
+        menu.hide();
+
+        // display menu at mouse click position
+        setTimeout(() => {
+            menu.show(evt.pageX, evt.pageY)
+        }, time);
+
+        // close the menu if the user clicks anywhere on the screen
+        document.addEventListener('click', hideContextMenu, false);
+
+    }
+
+    function hideContextMenu(evt) {
+
+        // hide the menu
+        menu.hide();
+
+        // remove the listener from the document
+        document.removeEventListener('click', hideContextMenu);
+
+    }
+
+    document.addEventListener('contextmenu', openContextMenu, false);
+
+</script>
+</body>
+</html>
